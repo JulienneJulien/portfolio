@@ -7,5 +7,5 @@
 <li>Deployed project using git commands and pushed completed code to my GitHub repository.</li>
 
 ## Link To Deployed Project/Application
-
+file:///C:/Users/JayJa/Downloads/01-HTML-Git-CSS/portfolio/index.html?#Projects
 ## Visuals
