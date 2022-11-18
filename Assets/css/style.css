@@ -1,0 +1,174 @@
+/* CSS variables were created at the root of the document to be used throughout the style sheet */
+:root {
+    --transparentpurple: rgba(24, 4, 41, 0.295);
+    --navyblue: rgb(5, 5, 54);
+    --goldenshade: rgba(66, 66, 9, 0.959);
+    --lightpurple: rgba(64, 24, 90, 0.877);
+    --beige: rgba(197, 204, 167, 0.877);
+    --lightgray: lightgray;
+    --reggray:rgba(128, 128, 128, 0.507);
+    --white: rgb(255, 255, 255);
+}
+/* UNIVERSAL STYLE ADDED */
+* {
+    box-sizing: border-box;
+  }
+  /* GENERAL STYLE ADDED*/
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: -webkit-linear-gradient(to left, gray, white);
+    background: linear-gradient(to left, beige, lightgray);
+}
+/* HEADER STYLES ADDED*/
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--navyblue);
+}
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("../images/Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  /* Horizontal Navigation bar Styled */
+  .navlinksbar {
+    overflow: hidden;
+    background-color: var(--transparentpurple);
+    width: 100%;
+  }
+  /* Navigation bar links Styled */
+  .navlinksbar ul li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  /* Right-aligned link Styled */
+  .navlinksbar ul li a.rightside {
+    float: right;
+  }
+  /* Change Navigation Links color on hover */
+  .navlinksbar a:hover, a:focus-visible {
+    background: var(--goldenshade);
+    color: var(--lightpurple);
+    border: 2px solid var(--lightpurple);
+  }
+  /*ARTICLE SECTION STYLED*/
+  .profilebio {   
+    background-color: white;
+    padding: 10px;
+    background-color:var(--beige);
+  }
+  
+  .imgprofile {
+    float: right;
+    border-radius: 50%; 
+    box-shadow: 3px 3px var(--lightpurple);
+    background-color: aqua;
+    margin: 0.5rem;
+    margin-top: -30px;
+    display: flex;
+    flex-flow: row;
+  }
+  /* FIGCAPTION MOVE OFFSCREEN*/
+.offscreenfig {
+    position: absolute;
+    left: -10000px;
+  }
+/* MAIN SECTION STYLES ADDED */
+.containerbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-body h4 {
+    text-align: center;
+}
+
+.card-body p {
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer button {
+    width: 150px;
+    background: var(--transparentpurple);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid var(--transparentpurple);
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s
+}
+
+.card-footer button:hover {
+    background-color: var(--goldenshade);
+    color: var(--lightpurple);
+    border: 2px solid var(--lightpurple);
+}
+/* MINI FORM SECTION STYLES ADDED */
+form {
+    text-align: center;
+    padding: 5px;
+}
+ /* FOOTER */
+ footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+    position: sticky;
+    bottom: 0;
+    /* background-color: var(--lightpurple);
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    line-height: 60px; */
+  }
+/* RESPONSIVE LAYOUT FOR WHEN THE SCREEN IS LESS THAN 700PX WIDE, MAKE THE IMAGE CARDS BECOME 2 COLOUMNS INSTEAD OF ROWS NEXT TO EACH OTHER  */
+@media screen and (max-width: 960px) {
+    .containerbox {   
+      flex-direction: row;
+    }
+  }
+
+/* RESPONSIVE LAYOUT FOR WHEN THE SCREEN IS LESS THAN 400PX WIDE, MAKE THE NAVIGATION LINKS STACK ON TOP OF EACH OTHER */
+  @media screen and (max-width: 415px) {
+    .navlinksbar a, form {
+      float: none;
+      width: 100%;
+    }
+  }
