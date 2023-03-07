@@ -9,4 +9,4 @@
 ## Link To Deployed Project/Application
 https://juliennejulien.github.io/portfolio/
 ## Visuals
-<img src="Assets/images/portfolio%20fullscreen%20capture.png" >
+![image](https://user-images.githubusercontent.com/117052258/223316986-437ac8d0-0828-4bae-a95d-e585ea3fc831.png)
